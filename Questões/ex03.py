@@ -1,5 +1,5 @@
 '''
-3 - Considere listas de listas e números. Cada lista, por sua vez, está formada por 
+03 - Considere listas de listas e números. Cada lista, por sua vez, está formada por 
 listas e números, recursivamente. Defina uma função achatar que retorne uma lista 
 plana com todos os números da lista original. 
 Por exemplo, achatar([1, 2, [4, 2], 5, [2, [1, 2, 3], [[1]]], 8]) 
@@ -17,7 +17,7 @@ def acghatar_1 (x):
             for y in acghatar_1(z):
                 lista.append(y)
         return lista
-            
+    
 print(acghatar_1([1, 2, [4, 2], 5, [2, [1, 2, 3], [[1]]], 8]))
             
 #Com compreensão:
