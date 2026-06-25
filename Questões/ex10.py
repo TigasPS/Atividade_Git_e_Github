@@ -1,9 +1,8 @@
 '''
-11 - Dada uma lista com as notas de todos os alunos de uma turma, 
-retorne a quantidade de alunos acima da média, que é 5.
+10 - Dada uma lista numérica, retorne apenas os números positivos
 '''
 
-def Acima_da_média (x):
-    return sum([1 for i in x if i > 5])
+def nums_positivos (x):
+    return [i for i in x if i > 0]
 
-print(Acima_da_média([10,4,20,3,3,4,8,9,2,34]))
+print(nums_positivos([-3, -2, -1, 0, 1, 2, 3]))
